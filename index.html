@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!-- Bulma Version 0.6.0 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" integrity="sha256-HEtF7HLJZSC3Le1HcsWbz1hDYFPZCqDhZa9QsCgVUdw=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" type="text/css" href="hero.css">
 </head>
 <body>
@@ -115,20 +116,41 @@
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <article class="tile is-child notification is-white">
-
-            <figure class="image is-4by3">
-              <a href="https://ivanbochenko.github.io/"><img src="img/app1.jpg"></a>
-            </figure>
-          </article>
-        </div>
-        <div class="tile is-parent is-8">
-          <article class="tile is-child notification is-white">
             <p class="title">Rock Paper Scissors</p>
 
             <div class="content">
               <p>Simple game built with javascript.</p>
             </div>
           </article>
+        </div>
+
+        <div class="tile is-parent is-8">
+          <article id="body" class="tile is-child notification is-white">
+        
+            <div class="score-board">
+              <div id="user-lable" class="badge">user</div>
+              <div id="comp-lable" class="badge">comp</div>
+              <span id="user-score">0</span>:<span id="comp-score">0</span>
+            </div>
+            <div class="result">
+              <p id="result">Welcome!</p>
+            </div>
+            <div class="choices">
+              <div class="choice" id="rock">
+                <img src="Images/Rock.png" alt="Rock">
+              </div>
+              <div class="choice" id="paper">
+                <img src="Images/Paper.png" alt="Paper">
+              </div>
+              <div class="choice" id="scissors">
+                <img src="Images/Scissors.png" alt="Scissors">
+              </div>
+            </div>
+            <p id="action-message">Make your move</p>
+            <script src="app2.js" charset="utf-8"></script>
+
+          </article>
+
         </div>
       </div>
       <div class="tile is-ancestor">
